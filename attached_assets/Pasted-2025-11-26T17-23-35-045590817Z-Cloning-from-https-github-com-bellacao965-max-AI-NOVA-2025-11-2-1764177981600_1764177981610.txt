@@ -1,0 +1,85 @@
+2025-11-26T17:23:35.045590817Z ==> Cloning from https://github.com/bellacao965-max/AI-NOVA
+2025-11-26T17:23:36.254266118Z ==> Checking out commit 12cace8f54caa583d80e3d061e9f91a117d0d6a2 in branch main
+2025-11-26T17:24:02.955117124Z ==> Using Node.js version 22.16.0 (default)
+2025-11-26T17:24:03.020533434Z ==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+2025-11-26T17:24:04.97878585Z ==> Running build command 'npm install; npm run build'...
+2025-11-26T17:24:16.12979108Z 
+2025-11-26T17:24:16.129823071Z added 548 packages, and audited 549 packages in 10s
+2025-11-26T17:24:16.129837312Z 
+2025-11-26T17:24:16.129844643Z 64 packages are looking for funding
+2025-11-26T17:24:16.129852233Z   run `npm fund` for details
+2025-11-26T17:24:16.145076308Z 
+2025-11-26T17:24:16.145097279Z 6 vulnerabilities (2 low, 4 moderate)
+2025-11-26T17:24:16.145101389Z 
+2025-11-26T17:24:16.14510565Z To address issues that do not require attention, run:
+2025-11-26T17:24:16.14510947Z   npm audit fix
+2025-11-26T17:24:16.14511285Z 
+2025-11-26T17:24:16.14511633Z To address all issues (including breaking changes), run:
+2025-11-26T17:24:16.145120541Z   npm audit fix --force
+2025-11-26T17:24:16.145123931Z 
+2025-11-26T17:24:16.145128131Z Run `npm audit` for details.
+2025-11-26T17:24:16.326913178Z 
+2025-11-26T17:24:16.326936759Z > rest-express@1.0.0 build
+2025-11-26T17:24:16.32694281Z > vite build && esbuild server/index-prod.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/index.js
+2025-11-26T17:24:16.32694823Z 
+2025-11-26T17:24:16.670253949Z vite v7.1.12 building for production...
+2025-11-26T17:24:16.756382629Z transforming...
+2025-11-26T17:24:21.719335052Z ✓ 2431 modules transformed.
+2025-11-26T17:24:22.023544174Z rendering chunks...
+2025-11-26T17:24:22.408795642Z [meta-images] no Replit deployment domain found, skipping meta tag updates
+2025-11-26T17:24:22.427974604Z computing gzip size...
+2025-11-26T17:24:22.461357023Z ../dist/public/index.html                                                             1.46 kB │ gzip:   0.59 kB
+2025-11-26T17:24:22.461377374Z ../dist/public/assets/futuristic_electric_car_concept-Cp6YoLGT.png                1,190.53 kB
+2025-11-26T17:24:22.46148867Z ../dist/public/assets/abstract_ai_brain_neural_network-mwuIravR.png               1,820.84 kB
+2025-11-26T17:24:22.461566095Z ../dist/public/assets/futuristic_cyberpunk_dragon_over_jakarta_city-DEX8ezHX.png  1,903.71 kB
+2025-11-26T17:24:22.461615218Z ../dist/public/assets/index-BpDl3PrF.css                                            118.98 kB │ gzip:  18.88 kB
+2025-11-26T17:24:22.46166365Z ../dist/public/assets/api-D6kA94M5.js                                                 1.24 kB │ gzip:   0.51 kB
+2025-11-26T17:24:22.461670321Z ../dist/public/assets/purify.es-B6FQ9oRL.js                                          22.57 kB │ gzip:   8.74 kB
+2025-11-26T17:24:22.461703063Z ../dist/public/assets/index.es-DrAURcnN.js                                          159.35 kB │ gzip:  53.40 kB
+2025-11-26T17:24:22.461741385Z ../dist/public/assets/html2canvas.esm-B0tyYwQk.js                                   202.36 kB │ gzip:  48.04 kB
+2025-11-26T17:24:22.461766576Z ../dist/public/assets/index-BdY1NRHz.js                                           1,295.47 kB │ gzip: 383.29 kB
+2025-11-26T17:24:22.461908265Z 
+2025-11-26T17:24:22.461916225Z (!) Some chunks are larger than 500 kB after minification. Consider:
+2025-11-26T17:24:22.461919685Z - Using dynamic import() to code-split the application
+2025-11-26T17:24:22.461923195Z - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+2025-11-26T17:24:22.461926195Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2025-11-26T17:24:22.462220463Z ✓ built in 5.76s
+2025-11-26T17:24:22.547742467Z 
+2025-11-26T17:24:22.547761778Z   dist/index.js  33.0kb
+2025-11-26T17:24:22.547764648Z 
+2025-11-26T17:24:22.547767058Z ⚡ Done in 5ms
+2025-11-26T17:24:56.571557566Z ==> Uploading build...
+2025-11-26T17:25:08.137193022Z ==> Uploaded in 6.5s. Compression took 5.1s
+2025-11-26T17:25:08.167508523Z ==> Build successful 🎉
+2025-11-26T17:25:13.976524656Z ==> Deploying...
+2025-11-26T17:25:42.28759997Z ==> Running 'npm run start'
+2025-11-26T17:25:43.385812795Z 
+2025-11-26T17:25:43.385841686Z > rest-express@1.0.0 start
+2025-11-26T17:25:43.385845776Z > NODE_ENV=production node dist/index.js
+2025-11-26T17:25:43.385848096Z 
+2025-11-26T17:25:52.282392757Z file:///opt/render/project/src/node_modules/openid-client/build/index.js:89
+2025-11-26T17:25:52.282413107Z     const err = new TypeError(message, { cause });
+2025-11-26T17:25:52.282416557Z                 ^
+2025-11-26T17:25:52.282418597Z 
+2025-11-26T17:25:52.282421267Z TypeError: "clientId" must be a non-empty string
+2025-11-26T17:25:52.282424177Z     at CodedTypeError (file:///opt/render/project/src/node_modules/openid-client/build/index.js:89:17)
+2025-11-26T17:25:52.282432237Z     at new Configuration (file:///opt/render/project/src/node_modules/openid-client/build/index.js:463:19)
+2025-11-26T17:25:52.282434797Z     at Module.discovery (file:///opt/render/project/src/node_modules/openid-client/build/index.js:244:22)
+2025-11-26T17:25:52.282437427Z     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-26T17:25:52.282439518Z     at async memoize.maxAge (file:///opt/render/project/src/dist/index.js:305:12)
+2025-11-26T17:25:52.282441607Z     at async setupAuth (file:///opt/render/project/src/dist/index.js:353:18)
+2025-11-26T17:25:52.282443667Z     at async registerRoutes (file:///opt/render/project/src/dist/index.js:509:3)
+2025-11-26T17:25:52.282445798Z     at async runApp (file:///opt/render/project/src/dist/index.js:873:18)
+2025-11-26T17:25:52.282448107Z     at async file:///opt/render/project/src/dist/index.js:905:3 {
+2025-11-26T17:25:52.282450698Z   code: 'ERR_INVALID_ARG_TYPE',
+2025-11-26T17:25:52.282452898Z   [cause]: undefined
+2025-11-26T17:25:52.282454988Z }
+2025-11-26T17:25:52.282456828Z 
+2025-11-26T17:25:52.282458798Z Node.js v22.16.0
+2025-11-26T17:25:54.396771509Z ==> Exited with status 1
+2025-11-26T17:25:54.574273103Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2025-11-26T17:25:58.916131644Z ==> Running 'npm run start'
+2025-11-26T17:25:59.916971058Z 
+2025-11-26T17:25:59.917007459Z > rest-express@1.0.0 start
+2025-11-26T17:25:59.917012579Z > NODE_ENV=production node dist/index.js
+2025-11-26T17:25:59.917015389Z 

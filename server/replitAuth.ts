@@ -60,6 +60,12 @@ async function upsertUser(claims: any) {
 }
 
 export async function setupAuth(app: Express) {
+  // Skip auth setup if REPL_ID not available (e.g., on Render)
+  if (!process.env.REPL_ID) {
+    console.warn("REPL_ID not set - authentication disabled");
+    return;
+  }
+
   app.set("trust proxy", 1);
   app.use(getSession());
   app.use(passport.initialize());
@@ -132,6 +138,13 @@ export async function setupAuth(app: Express) {
 }
 
 export const isAuthenticated: RequestHandler = async (req, res, next) => {
+  // Skip auth check if REPL_ID not available (e.g., on Render)
+  if (!process.env.REPL_ID) {
+    // Mock user for dev/demo mode
+    req.user = { claims: { sub: "demo-user" } } as any;
+    return next();
+  }
+
   const user = req.user as any;
 
   if (!req.isAuthenticated() || !user.expires_at) {
