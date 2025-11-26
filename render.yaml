@@ -5,35 +5,9 @@ services:
     plan: free
     buildCommand: npm run build
     startCommand: npm start
+    rootDir: ./
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
         value: "5000"
-    envVarReferences:
-      - key: DATABASE_URL
-        fromDatabase:
-          name: nova-postgres
-          property: connectionString
-      - key: GEMINI_API_KEY
-        fromService:
-          name: gemini-secret
-          type: env
-          property: GEMINI_API_KEY
-      - key: OPENAI_API_KEY
-        fromService:
-          name: openai-secret
-          type: env
-          property: OPENAI_API_KEY
-      - key: SESSION_SECRET
-        fromService:
-          name: session-secret
-          type: env
-          property: SESSION_SECRET
-
-  - type: postgres
-    name: nova-postgres
-    plan: free
-    version: "15"
-    initialDatabaseName: nova_db
-    postgresMajorVersion: "15"
