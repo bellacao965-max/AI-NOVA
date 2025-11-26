@@ -97,7 +97,8 @@ function needsWebSearch(message: string): boolean {
 
 export async function generateAIResponse(message: string, personality: string = "helpful"): Promise<string> {
   if (!gemini) {
-    throw new Error("Gemini API not configured");
+    console.warn("⚠️ Gemini API not configured - using local fallback");
+    return generateLocalFallback(message);
   }
 
   // Don't cache time-sensitive queries

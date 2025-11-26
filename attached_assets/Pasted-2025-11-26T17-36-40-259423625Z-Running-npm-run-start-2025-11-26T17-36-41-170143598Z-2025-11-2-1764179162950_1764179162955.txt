@@ -1,0 +1,50 @@
+2025-11-26T17:36:40.259423625Z ==> Running 'npm run start'
+2025-11-26T17:36:41.170143598Z 
+2025-11-26T17:36:41.170171839Z > rest-express@1.0.0 start
+2025-11-26T17:36:41.170177929Z > NODE_ENV=production node dist/index.js
+2025-11-26T17:36:41.170180689Z 
+2025-11-26T17:36:48.169579762Z REPL_ID not set - authentication disabled
+2025-11-26T17:36:48.365128989Z 5:36:48 PM [express] serving on port 10000
+2025-11-26T17:36:51.085449308Z ==> Your service is live 🎉
+2025-11-26T17:36:51.282284107Z ==> 
+2025-11-26T17:36:51.483917785Z ==> ///////////////////////////////////////////////////////////
+2025-11-26T17:36:51.684507514Z ==> 
+2025-11-26T17:36:51.900352433Z ==> Available at your primary URL https://ai-nova-1.onrender.com
+2025-11-26T17:36:52.095408402Z ==> 
+2025-11-26T17:36:52.3236231Z ==> ///////////////////////////////////////////////////////////
+2025-11-26T17:37:09.06651594Z Error in chat endpoint: Error: Gemini API not configured
+2025-11-26T17:37:09.066550771Z     at generateAIResponse (file:///opt/render/project/src/dist/index.js:447:11)
+2025-11-26T17:37:09.066583152Z     at file:///opt/render/project/src/dist/index.js:758:32
+2025-11-26T17:37:09.066588922Z     at Layer.handle [as handle_request] (/opt/render/project/src/node_modules/express/lib/router/layer.js:95:5)
+2025-11-26T17:37:09.066597922Z     at next (/opt/render/project/src/node_modules/express/lib/router/route.js:149:13)
+2025-11-26T17:37:09.066602612Z     at Route.dispatch (/opt/render/project/src/node_modules/express/lib/router/route.js:119:3)
+2025-11-26T17:37:09.066607222Z     at Layer.handle [as handle_request] (/opt/render/project/src/node_modules/express/lib/router/layer.js:95:5)
+2025-11-26T17:37:09.066613813Z     at /opt/render/project/src/node_modules/express/lib/router/index.js:284:15
+2025-11-26T17:37:09.066618163Z     at Function.process_params (/opt/render/project/src/node_modules/express/lib/router/index.js:346:12)
+2025-11-26T17:37:09.066622443Z     at next (/opt/render/project/src/node_modules/express/lib/router/index.js:280:10)
+2025-11-26T17:37:09.066626483Z     at file:///opt/render/project/src/dist/index.js:878:3
+2025-11-26T17:37:09.068427272Z 5:37:09 PM [express] POST /api/chat 500 in 4ms :: {"error":"Failed to generate response"}
+2025-11-26T17:37:35.5122017Z Error in chat endpoint: Error: Gemini API not configured
+2025-11-26T17:37:35.512223151Z     at generateAIResponse (file:///opt/render/project/src/dist/index.js:447:11)
+2025-11-26T17:37:35.512227991Z     at file:///opt/render/project/src/dist/index.js:758:32
+2025-11-26T17:37:35.512232711Z     at Layer.handle [as handle_request] (/opt/render/project/src/node_modules/express/lib/router/layer.js:95:5)
+2025-11-26T17:37:35.512237501Z     at next (/opt/render/project/src/node_modules/express/lib/router/route.js:149:13)
+2025-11-26T17:37:35.512241661Z     at Route.dispatch (/opt/render/project/src/node_modules/express/lib/router/route.js:119:3)
+2025-11-26T17:37:35.512245501Z     at Layer.handle [as handle_request] (/opt/render/project/src/node_modules/express/lib/router/layer.js:95:5)
+2025-11-26T17:37:35.512249311Z     at /opt/render/project/src/node_modules/express/lib/router/index.js:284:15
+2025-11-26T17:37:35.512253221Z     at Function.process_params (/opt/render/project/src/node_modules/express/lib/router/index.js:346:12)
+2025-11-26T17:37:35.512257432Z     at next (/opt/render/project/src/node_modules/express/lib/router/index.js:280:10)
+2025-11-26T17:37:35.512264522Z     at file:///opt/render/project/src/dist/index.js:878:3
+2025-11-26T17:37:35.513156046Z 5:37:35 PM [express] POST /api/chat 500 in 1ms :: {"error":"Failed to generate response"}
+2025-11-26T17:37:45.709330763Z Error in chat endpoint: Error: Gemini API not configured
+2025-11-26T17:37:45.709354044Z     at generateAIResponse (file:///opt/render/project/src/dist/index.js:447:11)
+2025-11-26T17:37:45.709359784Z     at file:///opt/render/project/src/dist/index.js:758:32
+2025-11-26T17:37:45.709365204Z     at Layer.handle [as handle_request] (/opt/render/project/src/node_modules/express/lib/router/layer.js:95:5)
+2025-11-26T17:37:45.709370354Z     at next (/opt/render/project/src/node_modules/express/lib/router/route.js:149:13)
+2025-11-26T17:37:45.709374874Z     at Route.dispatch (/opt/render/project/src/node_modules/express/lib/router/route.js:119:3)
+2025-11-26T17:37:45.709394505Z     at Layer.handle [as handle_request] (/opt/render/project/src/node_modules/express/lib/router/layer.js:95:5)
+2025-11-26T17:37:45.709397465Z     at /opt/render/project/src/node_modules/express/lib/router/index.js:284:15
+2025-11-26T17:37:45.709400255Z     at Function.process_params (/opt/render/project/src/node_modules/express/lib/router/index.js:346:12)
+2025-11-26T17:37:45.709402485Z     at next (/opt/render/project/src/node_modules/express/lib/router/index.js:280:10)
+2025-11-26T17:37:45.709404785Z     at file:///opt/render/project/src/dist/index.js:878:3
+2025-11-26T17:37:45.710087313Z 5:37:45 PM [express] POST /api/chat 500 in 1ms :: {"error":"Failed to generate response"}
