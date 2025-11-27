@@ -416,7 +416,7 @@ export default function HomePage() {
         ctx.filter = 'none';
       });
 
-      // Draw text with proper positioning
+      // Draw text with proper positioning and text wrapping
       ctx.fillStyle = cardTextColor;
       ctx.font = `bold ${cardTextSize}px Arial`;
       ctx.textAlign = 'center';
@@ -430,7 +430,34 @@ export default function HomePage() {
       ctx.shadowBlur = 10;
       ctx.shadowOffsetX = 2;
       ctx.shadowOffsetY = 2;
-      ctx.fillText(cardText, 200, textY);
+      
+      // Text wrapping function
+      const maxWidth = 320;
+      const lineHeight = Math.ceil(cardTextSize * 1.3);
+      const words = cardText.split(' ');
+      let lines: string[] = [];
+      let currentLine = '';
+      
+      for (const word of words) {
+        const testLine = currentLine + (currentLine ? ' ' : '') + word;
+        const metrics = ctx.measureText(testLine);
+        
+        if (metrics.width > maxWidth && currentLine) {
+          lines.push(currentLine);
+          currentLine = word;
+        } else {
+          currentLine = testLine;
+        }
+      }
+      if (currentLine) lines.push(currentLine);
+      
+      // Draw each line
+      const totalHeight = lines.length * lineHeight;
+      let startY = textY - (totalHeight - lineHeight) / 2;
+      
+      lines.forEach((line, index) => {
+        ctx.fillText(line, 200, startY + index * lineHeight);
+      });
       
       // Reset shadow
       ctx.shadowColor = 'transparent';
